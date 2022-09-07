@@ -1,0 +1,85 @@
+*{
+    font-family: 'Kanit', sans-serif;
+}
+header{
+    position: fixed;
+    width: 100%;
+    display: flex;
+    padding: 2vh;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(36, 35, 35);
+}
+
+header img{
+    width: 40vh;
+}
+
+header nav{
+    list-style: none;
+}
+
+header li, a{
+
+    text-decoration: none;
+    color: rgb(236, 211, 148);
+    margin-right: 2vw;
+    display: inline;
+  
+}
+
+
+#titulo_principal{
+    color: red;
+}
+
+#secao_inicial img{
+    width: 100%;
+
+}
+.main{
+    padding: 2vh;
+}
+
+
+.conteudo{
+    display: flex;
+    padding: 2vh;
+    
+}
+
+.conteudo div{
+    font-size: 120%;
+    padding: 2vh; 
+}
+
+.conteudo img{
+    width: 40%
+}
+.conteudo div p{
+    text-align: justify;
+}
+
+
+
+footer{
+    margin-top: 5vh;
+    padding: 2vh 5vh 15vh 5vh;
+    display: grid;
+    grid-column-gap: 5vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 100;
+    height: 100px;
+    background-color: rgb(94, 88, 88);
+    color: white;
+}
+
+
+footer h3{
+    padding: 0 0 10px 0;
+}
+
+footer li{
+    list-style: none;
+    padding: 0 0 5px;
+}

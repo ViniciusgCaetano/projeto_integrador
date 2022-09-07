@@ -1,0 +1,39 @@
+
+
+
+.center {
+    margin: auto;
+    width: 60%;
+    padding: 10px;
+
+}
+
+.center img {
+    width: 60%;
+    display: block;
+    margin: 0px auto;
+}
+
+.center input{
+    padding: 10px 0 10px 0;
+    width: 80%;
+    margin: 0 10% 5% 10%;
+    font-size: 14px;
+}
+
+.center label{
+    color: white;
+    width: 80%;
+    display: block;
+    margin: 0px auto;
+    font-size: 20px;
+}
+
+.center input[type="submit"]{
+    color: white;
+    background-color: black;
+
+}
+.center input[type="submit"]:hover {
+    background:rgb(129, 0, 0);
+}
