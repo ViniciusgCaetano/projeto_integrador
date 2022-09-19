@@ -1,11 +1,21 @@
+@font-face {
+    font-family: Coco-Sharp-Italic-trial;
+    src: url(../fonts/Coco-Sharp-Italic-trial.ttf);
+}
+
 
 
 
 .center {
-    margin: auto;
-    width: 60%;
-    padding: 10px;
-
+    
+    background-color: rgba(3, 3, 3, 0.845);
+    margin: 0 auto 0;
+    margin-top: 10vh;
+    width: 40%;
+    padding: 15px;
+    padding-bottom: 35px;
+    border-radius: 10px;
+    
 }
 
 .center img {
@@ -15,25 +25,96 @@
 }
 
 .center input{
-    padding: 10px 0 10px 0;
+    background-color: rgba(243, 243, 243, 0);
+    border-color: aquamarine;
+    color: rgb(255, 255, 255);
+    border-style: none none solid none;
+    padding: 20px 0px 10px 0;
     width: 80%;
-    margin: 0 10% 5% 10%;
-    font-size: 14px;
+    margin: 0 0% 0% 10%;
+    font-size: 18px;
+}
+
+.center input:focus{
+    border-color: aquamarine;
+    outline: none;
+
 }
 
 .center label{
+    font-family:Coco-Sharp-Italic-trial;
     color: white;
     width: 80%;
     display: block;
-    margin: 0px auto;
-    font-size: 20px;
+    margin: 0 auto;
+    margin-top: 5%;
+    font-size: 30px;
+}
+
+h2{
+    font-family:Coco-Sharp-Italic-trial;
+    color: white;
+    margin-top: 5%;
+    text-align: center;
+    font-size: 30px;
 }
 
 .center input[type="submit"]{
-    color: white;
-    background-color: black;
+    border-style: none;
+    margin-top: 5%;
+    font-family:Coco-Sharp-Italic-trial;
+    color: rgb(23, 1, 1);
+    background-color: rgb(255, 187, 0);
+
+    
+}
+
+.center input[type="submit"]:hover {
+    
+    color: rgb(255, 255, 255);
+    background:rgb(129, 0, 0);
 
 }
-.center input[type="submit"]:hover {
-    background:rgb(129, 0, 0);
+
+#buttons input{
+
+    font-size: 70%;
+    margin: 0%;
+    margin-top: 5%;
+    width: 45%;  
+
 }
+
+#buttons{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+p{
+    font-family: Coco-Sharp-Italic-trial;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 5vh;
+    color: white;
+}
+
+a{
+    color: orange;
+}
+
+a:visited{
+    color: orange;
+}
+
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: rgb(253, 245, 245);
+     /* Firefox */
+}
+
+
+@media (min-width: 600px)
