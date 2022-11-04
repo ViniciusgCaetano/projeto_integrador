@@ -2,12 +2,13 @@
     font-family: Coco-Sharp-Italic-trial;
     src: url(../fonts/Coco-Sharp-Italic-trial.ttf);
 }
+@font-face {
+    font-family: TangoSans;
+    src: url(../fonts/TangoSans.ttf);
+}
 
 
-
-
-.center {
-    
+.center { 
     background-color: rgba(3, 3, 3, 0.845);
     margin: 0 auto 0;
     margin-top: 10vh;
@@ -15,7 +16,6 @@
     padding: 15px;
     padding-bottom: 35px;
     border-radius: 10px;
-    
 }
 
 .center img {
@@ -25,6 +25,7 @@
 }
 
 .center input{
+    font-family: 'TangoSans' !important;
     background-color: rgba(243, 243, 243, 0);
     border-color: aquamarine;
     color: rgb(255, 255, 255);
@@ -38,7 +39,6 @@
 .center input:focus{
     border-color: aquamarine;
     outline: none;
-
 }
 
 .center label{
@@ -51,23 +51,26 @@
     font-size: 30px;
 }
 
+
 h2{
-    font-family:Coco-Sharp-Italic-trial;
+    font-family:'Coco-Sharp-Italic-trial';
     color: white;
     margin-top: 5%;
     text-align: center;
     font-size: 30px;
 }
 
+
+
 .center input[type="submit"]{
     border-style: none;
     margin-top: 5%;
-    font-family:Coco-Sharp-Italic-trial;
-    color: rgb(23, 1, 1);
-    background-color: rgb(255, 187, 0);
-
-    
+    font-family:'Coco-Sharp-Italic-trial';
+    font-size: 1.2rem;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 187, 0);   
 }
+
 
 .center input[type="submit"]:hover {
     
@@ -76,23 +79,31 @@ h2{
 
 }
 
-#buttons input{
 
-    font-size: 70%;
-    margin: 0%;
-    margin-top: 5%;
-    width: 45%;  
-
-}
-
-#buttons{
+#buttons {
     width: 80%;
     margin: auto;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-
 }
+
+
+#buttons #cadastre-submit{
+    font-size: 100%;
+    width: 100%;
+}
+
+
+#buttons input{
+
+    font-size: 70%;
+    margin: 0%;
+    margin-top: 5%;
+    width: 45%; 
+    
+}
+
 
 p{
     font-family: Coco-Sharp-Italic-trial;
@@ -102,11 +113,11 @@ p{
     color: white;
 }
 
-a{
+p a{
     color: orange;
 }
 
-a:visited{
+p a:visited{
     color: orange;
 }
 
@@ -117,4 +128,13 @@ a:visited{
 }
 
 
-@media (min-width: 600px)
+@media (max-width: 1100px){
+    .center{
+        width: 70%;
+        font-size: small;
+    }
+
+    #buttons input{
+        font-size: 60%;    
+    }
+}

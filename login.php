@@ -1,4 +1,5 @@
-<!DOCTYPE html>
+
+
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
@@ -11,21 +12,30 @@
 </head>
 
 <body>
+    <?php 
+        include "header.php";
+    ?>
     <div class=center>
-        <a href="index.html"><img src="images/logo.png"></a>
-        <form>
+        <a href="index.php"><img src="images/logo.png"></a>
+        <?php
+            require_once 'php/login.php';
+        ?>
+        <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST">
             <label for="Usuário">Usuário</label>
             <input name="Usuário" placeholder="Digite o usuário aqui"><br>
             <label for="Senha">Senha</label>
             <input name="Senha" type="password" placeholder="Digite a senha">
             <div id="buttons">
-                <input type="submit" id="submit" value="Autenticar Usuário">
+                <input name='btn-entrar' type="submit" id="submit" value="Autenticar Usuário">
                 <input type="submit" id="submit" value="Esqueceu a Senha?">
             </div>
-            <p>Não possui cadastro? <a href="cadastre.html">Entre aqui!</a></p>
+            <p>Não possui cadastro? <a href="cadastre.php">Entre aqui!</a></p>
         </form>
-
-        
     </div>
+
+    <?php 
+        include "footer.php";
+    ?>
+
 </body>
 </html>
