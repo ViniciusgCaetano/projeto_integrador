@@ -16,10 +16,6 @@
 
     <div>
     </div>
-
-
-
-
     <div id="principal">
         <h1>Lista de Usuários cadastrados</h1>
 

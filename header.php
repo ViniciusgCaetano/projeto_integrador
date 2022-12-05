@@ -25,7 +25,7 @@
                                 <a href='intranet.php'>Intranet</a>
                             </li>
                             <li>
-                                <a href='intranet.php'>Caminhões</a>
+                                <a href='routes.php'>Agendar</a>
                             </li>
                             ";
                         else:
