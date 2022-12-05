@@ -5,56 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" sizes="96x96" href="images/favicon.png">
     <link rel="stylesheet" href="css/background.css">
-    <link rel="stylesheet" href="css/intranet.css">
-    <title>Intranet - GVTT Transportadora</title>
+    <link rel="stylesheet" href="css/routes.css">
+    <title>Agendamento - GVTT Transportadora</title>
 </head>
 
 <body>
     <?php 
         include "header.php";
     ?>
-
-    <div>
-    </div>
     <div id="principal">
-        <h1>Lista de Usuários cadastrados</h1>
-
+        <h1>Opções</h1>
     </div>
-    <?php
-        require_once "php/connect.php";
-  
-        if(isset($_SESSION['idUser'])):
-            $sql = "SELECT * FROM clientes";
-            $result=mysqli_query($connect,$sql);
-
-            echo '<div id="collectionsDiv">';
+    <div id="choices">
+        <div class="choice-card" onclick="location.href='show_users.php';" style="cursor: pointer;">
+            <h1>Ver usuários cadastrados</h1>
+            <img src="images/person_icon.png">
             
-            while ($row=mysqli_fetch_assoc($result)) {
-                echo "
-                <div class='info_usuario'>
-                    <h3 style='text-align: center'>{$row['nomCliente']}</h3>
-                    <div class='displayer'>
-                        <div>
-                            <h5>Usuário: {$row['userCliente']}</h5>
-                            <h5>Email: {$row['emailCliente']}</h5>
-                            <h5>Data de nascimento: {$row['nascCliente']}</h5>
-                        </div>
-                        <div>
-                            <img src='images/usericon.png' >
-                        </div>
-                    </div>
-                </div>
-                ";
-            };
-            
-            echo '</div>';
-        endif;
-        
-        
-    ?>
+        </div>
 
+        <div class="choice-card" onclick="location.href='intranet.php';" style="cursor: pointer;">
+            <h1>Realizar cadastros</h1>
+            <img src="images/cadastro_icon.png">
+        </div>
+
+        <div class="choice-card">
+            <h1>Realizar agendamento</h1>
+            <img src="images/caminhao_icon.png">
+        </div>
+    </div>
+    
     <?php 
         include "footer.php";
     ?>
 
 </body>
+</html>

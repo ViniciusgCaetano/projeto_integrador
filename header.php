@@ -24,9 +24,6 @@
                             <li>
                                 <a href='intranet.php'>Intranet</a>
                             </li>
-                            <li>
-                                <a href='routes.php'>Agendar</a>
-                            </li>
                             ";
                         else:
                             echo "
