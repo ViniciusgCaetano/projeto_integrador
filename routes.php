@@ -13,9 +13,25 @@
     <?php 
         include "header.php";
     ?>
-     <div id="principal">
-        <h1>Agendar transportes</h1>
+    <div id="principal">
+        <h1>Opções</h1>
+    </div>
+    <div id="choices">
+        <div class="choice-card" onclick="location.href='intranet.php';" style="cursor: pointer;">
+            <h1>Ver usuários cadastrados</h1>
+            <img src="images/person_icon.png">
+            
+        </div>
 
+        <div class="choice-card" onclick="location.href='intranet.php';" style="cursor: pointer;">
+            <h1>Realizar cadastros</h1>
+            <img src="images/cadastro_icon.png">
+        </div>
+
+        <div class="choice-card">
+            <h1>Realizar agendamento</h1>
+            <img src="images/caminhao_icon.png">
+        </div>
     </div>
     
     <?php 
