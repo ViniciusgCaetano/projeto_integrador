@@ -7,7 +7,7 @@
         $senha = md5($senha);
 
 
-        $sql= "SELECT idCliente, nomCliente FROM clientes WHERE nomCliente= '$login' AND senhaCliente='$senha'";
+        $sql= "SELECT idCliente, nomCliente FROM clientes WHERE userCliente= '$login' AND senhaCliente='$senha'";
 		
 		$resultado = mysqli_query($connect,$sql);
         
@@ -18,13 +18,11 @@
             $_SESSION['logged'] = true;
             $_SESSION['idUser'] = $arr['idCliente'];
             $id = $_SESSION['idUser'];
-            header("refresh:3;url=http://localhost");
+            header("refresh:1;url=http://localhost");
         else:
             $_SESSION['logged'] = false;
             include "error.php";
-            header("refresh:1;url=http://localhost/login.php");
-            
-            
+            header("refresh:1;url=http://localhost/login.php");  
         endif;
     endif;
 ?>

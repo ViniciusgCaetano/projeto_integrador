@@ -1,11 +1,11 @@
 header{
     position: fixed;
-    width: 100%;
+    width: calc(100% - 4vh);
     display: flex;
     padding: 2vh;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(36, 35, 35);
+    background-color: rgb(54, 54, 54);
 }
 
 header div h4{
@@ -18,7 +18,10 @@ header img{
 }
 
 header nav{
+    display: flex;
+    justify-content: flex-end;
     list-style: none;
+    align-items: center;
 }
 
 header li, a{

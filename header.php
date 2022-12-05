@@ -1,46 +1,77 @@
 <link rel="stylesheet" href="css/header.css">
 <link rel="stylesheet" href="css/principal.css">
 <header>
-        <a href="index.php"><img src="images/name_logo.png"></a>
+        <a href="index.php"><img src="images/name_logo.png" tile="opa"></a>
         <nav>
             <ul>
                 <li>
-                    <a href="#quem_somos">Quem Somos</a>
+                    <a href="index.php#quem_somos">Quem Somos</a>
                 </li>
                 <li>
-                    <a href="#contato">Contato</a>
+                    <a href="index.php#contato">Contato</a>
                 </li>
                 <li>
-                    <a href="#trabalhe_conosco">Trabalhe Conosco</a>
-                </li>
-                <li>
-                    <a href="login.php">Login</a>
+                    <a href="index.php#trabalhe_conosco">Trabalhe Conosco</a>
                 </li>
                 <?php
                     if(session_status() != PHP_SESSION_ACTIVE):
                         session_start();
                     endif;
 
-                    if(isset($_SESSION['idUser'])):
-                        require_once "php/connect.php";
-                        $idCliente = $_SESSION['idUser'];
-                        $sql= "SELECT nomCliente FROM clientes WHERE idCliente= '$idCliente'";
-                        $resultado = mysqli_query($connect,$sql);
-                        $arr = mysqli_fetch_array($resultado);
-                        $name = $arr['nomCliente'];
-
+                    if(isset($_SESSION['logged'])):
                         if($_SESSION['logged'] == true):
-                            echo "<li >
-                                <div style='font-size: 12pt; display: inline-block;'>
-                                    Logado Como 
-                                    $name
-                                <div>
-                            </li>";
+                            echo "
+                            <li>
+                                <a href='intranet.php'>Intranet</a>
+                            </li>
+                            <li>
+                                <a href='intranet.php'>Caminhões</a>
+                            </li>
+                            ";
+                        else:
+                            echo "
+                            <li>
+                                <a href='login.php'>Login</a>
+                            </li>
+                                ";     
                         endif;
-                    endif;
+                    else:
+                        echo "
+                        <li>
+                            <a href='login.php'>Login</a>
+                        </li>
+                            ";
+                    endif     
+    
                 ?>
 
             </ul>
+        
+        <?php
+            if(session_status() != PHP_SESSION_ACTIVE):
+                session_start();
+            endif;
+
+            if(isset($_SESSION['idUser'])):
+                require_once "php/connect.php";
+                $idCliente = $_SESSION['idUser'];
+                $sql= "SELECT nomCliente FROM clientes WHERE idCliente= '$idCliente'";
+                $resultado = mysqli_query($connect,$sql);
+                $arr = mysqli_fetch_array($resultado);
+                $name = $arr['nomCliente'];
+
+                if($_SESSION['logged'] == true):
+                    echo "
+                        
+                        <a href='logout.php' style='display: contents;'><img style='width:4% !important; height:4% !important;' src='images/usericon.png' title='Logado como $name.\nAperte no ícone para fazer logout' ></a>
+                        
+                    ";
+                endif;
+            endif;
+        ?>
         </nav>
+
+            
+        
 </header>
 <br/>

@@ -10,7 +10,7 @@ footer{
     display: grid;
     grid-column-gap: 5vh;
     grid-template-columns: 1fr 1fr 1fr;
-    width: 100vv;
+
     height: 200px;
     background-color: rgb(94, 88, 88);
     color: white;
@@ -20,7 +20,7 @@ footer{
 footer h1{
     padding-bottom: 3vh;
     font-size: 1.5rem;
-    color: rgb(34, 34, 34);
+    color: rgb(207, 207, 207);
 
 }
 
@@ -29,6 +29,7 @@ footer li{
     line-height: 200%;
     list-style: none;
     padding: 0 0 5px;
+    color: rgb(255, 255, 255);
 }
 
 

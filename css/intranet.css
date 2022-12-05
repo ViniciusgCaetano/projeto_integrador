@@ -1,0 +1,31 @@
+#principal{
+    margin-top: 10vh;
+}
+
+#principal h1{
+    text-align: center;
+    margin: auto;
+}
+
+.info_usuario{
+    
+    margin: 2vh auto;
+    padding: 2vh;
+    border-radius: 10px;
+    background-color: darkgray;
+    width: 90%;
+}
+
+.displayer{
+    
+    display: flex;
+    justify-content: space-between;
+}
+
+.displayer h5{
+    font-family:  'Tahoma', 'monospace';
+}
+.displayer div img{
+    height: 100;
+}
+

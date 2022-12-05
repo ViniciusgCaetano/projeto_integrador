@@ -27,7 +27,6 @@
                 </script>";
         }else{
             $senha = md5($senha);
-            echo $data;
             $sql= "INSERT INTO clientes (idCliente, nomCliente, userCliente, nascCliente, senhaCliente, emailCliente, permCliente) VALUES (NULL, '$nome', '$user', '$data',  '$senha', '$email', 1)";
 
             echo "<script> 

@@ -43,10 +43,14 @@
                 <p>Fornecer transporte de alta qualidade para todo o Brasil, 
                     sempre trabalhando com foco nos clientes e colaboradores.
                 </p>
+                <br>
+
                 <h1>Visão</h1>
                 <p>Satisfazer os clientes da melhor forma possível trazendo o produto
                     que ele procura.
                 </p>
+                <br>
+                
                 <h1>Valores</h1>
                 <p>
                     Atendimento ao Cliente.<br>
