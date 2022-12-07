@@ -1,0 +1,85 @@
+#principal{
+    margin-top: 10vh;
+}
+
+#principal h1{
+    font-size: 150%;
+    text-align: center;
+    margin: auto;
+}
+
+#forms{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+
+.center { 
+    
+    background-color: rgba(3, 3, 3, 0.845);
+    margin-top: 5vh;
+    width: 25%;
+    min-width: 350px;
+    max-height: 30%;
+    padding: 15px;
+    padding-bottom: 35px;
+    border-radius: 10px;
+}
+
+.center h1{
+    text-align: center;
+    font-size: 150%;
+    color:rgb(255, 255, 255);
+}
+
+.center img {
+    width: 60%;
+    display: block;
+    margin: 0px auto;
+}
+
+.center input, select{
+    font-family: 'TangoSans' !important;
+    background-color: rgba(243, 243, 243, 0);
+    border-color: aquamarine;
+    color: rgb(255, 255, 255);
+    border-style: none none solid none;
+    padding: 20px 0px 10px 0;
+    width: 80%;
+    margin: 0 0% 0% 10%;
+    font-size: 18px;
+}
+
+.center input:focus{
+    border-color: aquamarine;
+    outline: none;
+}
+
+.center label{
+    font-family:Coco-Sharp-Italic-trial;
+    color: white;
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+    margin-top: 5%;
+    font-size: 30px;
+}
+
+
+.center input[type="submit"]{
+    border-style: none;
+    margin-top: 5%;
+    font-family:'Coco-Sharp-Italic-trial';
+    font-size: 1.2rem;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 187, 0);   
+}
+
+
+.center input[type="submit"]:hover {
+    
+    color: rgb(255, 255, 255);
+    background:rgb(129, 0, 0);
+
+}

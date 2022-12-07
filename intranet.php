@@ -23,12 +23,12 @@
             
         </div>
 
-        <div class="choice-card" onclick="location.href='intranet.php';" style="cursor: pointer;">
+        <div class="choice-card" onclick="location.href='cadastre_itens.php';" style="cursor: pointer;">
             <h1>Realizar cadastros</h1>
             <img src="images/cadastro_icon.png">
         </div>
 
-        <div class="choice-card">
+        <div class="choice-card" onclick="location.href='schedule.php';" style="cursor: pointer;">
             <h1>Realizar agendamento</h1>
             <img src="images/caminhao_icon.png">
         </div>
